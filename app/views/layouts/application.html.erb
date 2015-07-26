@@ -6,9 +6,24 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fotos</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Inicio</a></li>
+    </ul>
+    <p class="navbar-text pull-right">logged_in_user@email.com | <a href="log_out_link_here">Log Out</a></p>
+  </div>
+</div>
 <body>
+  <div class="container">
 
-<%= yield %>
+    <%= flash_messages %>
+
+    <%= yield %>
+  </div><!-- /container -->
 
 </body>
 </html>
