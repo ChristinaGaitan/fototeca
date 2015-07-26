@@ -15,7 +15,7 @@
       <tr>
         <td><%= foto.titulo %></td>
         <td><%= foto.descripcion %></td>
-        <td><%= foto.imagen %></td>
+        <td><%= image_tag(foto.imagen, :width => 200) if foto.imagen.present? %></td>
         <td><%= link_to 'Show', foto %></td>
         <td><%= link_to 'Edit', edit_foto_path(foto) %></td>
         <td><%= link_to 'Destroy', foto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
