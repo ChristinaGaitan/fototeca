@@ -10,7 +10,7 @@
 
 <p>
   <strong>Imagen:</strong>
-  <%= @foto.imagen %>
+  <%= image_tag(@foto.imagen, :width => 600) if @foto.imagen.present? %>
 </p>
 
 <%= link_to 'Edit', edit_foto_path(@foto) %> |
