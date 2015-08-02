@@ -11,6 +11,7 @@ gem 'quiet_assets'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
 gem 'carrierwave'
+gem 'mini_magick', '3.8.0'
 
 group :development, :test do
   gem 'sqlite3'
