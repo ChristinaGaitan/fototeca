@@ -1,0 +1,12 @@
+%p
+  %strong Titulo:
+  = @foto.titulo
+%p
+  %strong Descripcion:
+  = @foto.descripcion
+%p
+  %strong Imagen:
+  = image_tag(@foto.imagen, :width => 600) if @foto.imagen.present?
+= link_to 'Edit', edit_foto_path(@foto)
+|
+= link_to 'Back', fotos_path
