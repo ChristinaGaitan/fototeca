@@ -11,7 +11,7 @@
       %tr
         %td= foto.titulo
         %td= foto.descripcion
-        %td= image_tag(foto.imagen_url(:thumb)) if foto.imagen.present?
+        %td= foto.imagen
         %td= link_to 'Show', foto
         %td= link_to 'Edit', edit_foto_path(foto)
         %td= link_to 'Destroy', foto, method: :delete, data: { confirm: 'Are you sure?' }
