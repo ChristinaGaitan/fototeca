@@ -10,7 +10,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'quiet_assets'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
-gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
 gem "haml-rails", "~> 0.9"
 
