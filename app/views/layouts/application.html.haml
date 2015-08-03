@@ -25,6 +25,11 @@
             |
             \#{link_to "Login", new_user_session_path, :class => 'navbar-link'}
     .container
-      = flash_messages
+      - if flash[:notice]
+        .alert.alert-info
+          = flash[:notice]
+      - if flash[:alert]
+        .alert.alert-danger
+          = flash[:alert]
       = yield
     / /container
